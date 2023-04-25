@@ -38,4 +38,14 @@ func main() {
 		fmt.Println(i, c)
 	}
 
+	ac1 := []int{1, 2, 123}
+	for index, exit := range ac1 {
+		exit += 1
+		fmt.Println("index is", index, exit)
+		if exit == 2 {
+			fmt.Println("exit value is :", index)
+		}
+	}
+	fmt.Println()
+
 }

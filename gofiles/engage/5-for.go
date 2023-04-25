@@ -2,7 +2,10 @@
 
 package main
 
-import "fmt"
+import (
+	"crypto/sha256"
+	"fmt"
+)
 
 func main() {
 	fmt.Println("Here we discuss for loop in golang")
@@ -12,6 +15,12 @@ func main() {
 	for i <= 3 {
 		fmt.Println(i)
 		i = i + 1
+	}
+	first := sha256.New()
+	first.Write([]byte("ccccc"))
+	for i := 23; i < first.Size(); i += 19 {
+		fmt.Println(i)
+		fmt.Println(first.Size())
 	}
 
 	// A classic initial/condition/after for loop.

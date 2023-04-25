@@ -10,7 +10,7 @@ func main() {
 	// Unlike arrays, slices are typed only by the elements they contain (not the number of elements).
 	// To create an empty slice with non-zero length, use the builtin make.
 	// Here we make a slice of strings of length 3 (initially zero-valued).
-
+	hex := make([]float32, 5)
 	s := make([]string, 3)
 	fmt.Println("emp", s)
 
@@ -25,8 +25,9 @@ func main() {
 
 	s = append(s, "d")
 	s = append(s, "e", "f")
+	hex = append(hex, 12)
 	fmt.Println("apd: ", s)
-
+	fmt.Println("hex", hex)
 	// Slices can also be copy’d.
 	// Here we create an empty slice c of the same length as s and copy into c from s.
 
@@ -65,7 +66,7 @@ func main() {
 		}
 	}
 	fmt.Println("2d: ", twoD)
-
+	sum
 	c[0] = "facebook"
 	c[1] = "google"
 	c[3] = "yahoo"
