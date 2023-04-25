@@ -38,4 +38,16 @@ func main() {
 
 	n := map[string]int{"foo": 1, "bar": 2} // create the map on the fly!
 	fmt.Println("map: ", n)
+	ma := make(map[string]int)
+	ma["You are a shit"] = 123
+	fmt.Println("you are very bf")
+	mb := map[string]float32{"ss": 3.22}
+	keys := make([]string, 0, 5)
+	for k := range ma {
+		keys = append(keys, k)
+	}
+	mc := make([]string, 2, 9)
+	fmt.Println("mc'value is ", mc)
+	fmt.Println("ma value is ", ma)
+	fmt.Println("mb value id ", mb)
 }
