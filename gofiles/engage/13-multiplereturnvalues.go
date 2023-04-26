@@ -3,7 +3,9 @@
 
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
 	fmt.Println("this is where we go further")
@@ -22,4 +24,28 @@ func main() {
 
 func values() (int, int) {
 	return 7, 4
+}
+
+type first struct {
+	bl1  bool
+	flo  float32
+	in1  int
+	str  string
+	por  *int
+	por2 *float32
+	por3 *string
+}
+
+var (
+	fir first
+	bl2 string
+)
+
+func light(light_piex int, length, wide int) (error, int, int) {
+	area := length * wide
+	volumes := *fir.por * wide
+	fmt.Println("befor change area and volumes", area, volumes)
+	area = *fir.por + *&fir.in1
+	fmt.Println("after modify area", area)
+
 }

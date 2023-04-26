@@ -66,7 +66,6 @@ func main() {
 		}
 	}
 	fmt.Println("2d: ", twoD)
-	sum
 	c[0] = "facebook"
 	c[1] = "google"
 	c[3] = "yahoo"
