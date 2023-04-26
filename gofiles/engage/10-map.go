@@ -2,7 +2,9 @@
 
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
 	fmt.Println("We have not even started yet")
@@ -50,4 +52,17 @@ func main() {
 	fmt.Println("mc'value is ", mc)
 	fmt.Println("ma value is ", ma)
 	fmt.Println("mb value id ", mb)
+	md := make([]string, 0, 23000)
+	for index, mf := range md {
+		if index == 0 {
+
+			append(md, "sdd")
+			fmt.Println(md)
+		}
+		if mf == 234 {
+			fmt.Println("cons you ,you are find the worth mf :", md)
+		}
+		fmt.Println("md is array ,else value of ", mf)
+	}
+
 }
