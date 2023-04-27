@@ -22,6 +22,9 @@ func main() {
 
 	// zeroval doesn’t change the i in main,
 	// but zeroptr does because it has a reference to the memory address for that variable.
+	j := "xiaojiji"
+	ac1ptr(&j)
+	fmt.Println("gne_ptr value and locatin :", j, &j)
 
 }
 
@@ -43,4 +46,7 @@ func zeroval(ival int) {
 // here iprt is of type integer pointer
 func zeroptr(iprt *int) {
 	*iprt = 0
+}
+func ac1ptr(gen_str *string) {
+	*gen_str = "xiaojingjing dead"
 }
