@@ -5,12 +5,20 @@ They’re useful for grouping data together to form records.
 
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 // This person struct type has name and age fields.
 type person struct {
 	name string
 	age  int
+}
+type c struct {
+	name     string
+	age      int
+	color    string
+	good_man bool
 }
 
 func main() {
@@ -40,4 +48,14 @@ func main() {
 	sp.age = 51
 	fmt.Println(sp.age)
 
+	var cc1 = c{"caocao", 22, "yellow", true}
+	fmt.Println(cc1)
+
 }
+
+/*type cc struct {
+	name string
+	age int
+	color string
+	good_man bool
+ } */
